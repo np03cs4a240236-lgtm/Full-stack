@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar Button + Dark Mode Button -->
+    <button id="toggleSidebar" class="menu-btn">☰</button>
+    <button id="toggleDark" class="dark-btn">🌙</button>
+
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <h2 class="logo">Portfolio</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <header>
+        <h1>PRASHANT JHA</h1>
+        <p>Web Developer | Designer | Student</p>
+    </header>
+
+  <div class="hero">
+    <img src="0025b164-38e7-4076-ab92-1903c6c34788.jpg" alt="My Photo">
+</div>
+
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate learner and web development enthusiast. I enjoy creating websites with clean UI,
+           animations, and responsive layouts. Currently learning HTML, CSS, JS, Java & more.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-list">
+
+            <div class="project-card glass">
+                <h3>Portfolio Website</h3>
+                <p>A modern animated portfolio website using HTML, CSS & JavaScript.</p>
+            </div>
+
+            <div class="project-card glass">
+                <h3>Java OOP Projects</h3>
+                <p>Inheritance, Polymorphism, Interface, File Handling and more.</p>
+            </div>
+
+            <div class="project-card glass">
+                <h3>Responsive UI Design</h3>
+                <p>Beautiful user interfaces with animations & gradients.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            <label>Name:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Message:</label>
+            <textarea rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Prashant | All Rights Reserved</p>
+    </footer>
+
+
+    <!-- JS for Sidebar + Dark Mode -->
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const toggleBtn = document.getElementById("toggleSidebar");
+        const darkBtn = document.getElementById("toggleDark");
+
+        toggleBtn.onclick = () => {
+            sidebar.classList.toggle("open");
+        };
+
+        darkBtn.onclick = () => {
+            document.body.classList.toggle("dark-mode");
+        };
+    </script>
+    <button> 
+    <button id="toggleSidebar" class="ThankYou-btn">☰</button>
+
+</body>
+</html>
